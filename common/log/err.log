@@ -1,0 +1,33 @@
+[ERROR 2019-06-10 19:37:16]Response body msg != expected_msg, expected_msg is 请求1成功, body_msg is msg
+[ERROR 2019-06-10 19:58:07]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
+[ERROR 2019-06-12 15:57:51]idcard_front_image is not written to database 
+[ERROR 2019-06-12 15:58:31]idcard_front_image is not written to database 
+[ERROR 2019-06-12 15:58:31]idcard_back_image is not written to database 
+[ERROR 2019-06-12 15:58:31]create_time is not written to database 
+[ERROR 2019-06-12 15:59:12]other_mobile is not written to database 
+[ERROR 2019-06-12 15:59:12]idcard_front_image is not written to database 
+[ERROR 2019-06-12 15:59:12]idcard_back_image is not written to database 
+[ERROR 2019-06-12 15:59:12]create_time is not written to database 
+[ERROR 2019-06-12 16:02:12]other_mobile is not written to database 
+[ERROR 2019-06-12 16:04:25]idcard_front_image is not written to database 
+[ERROR 2019-06-12 16:05:00]idcard_front_image is not written to database 
+[ERROR 2019-06-12 16:08:40]create_time is not written to database 
+[ERROR 2019-06-12 16:25:15]open_id is not the same
+[ERROR 2019-06-12 16:26:31]open_id is not the same
+[ERROR 2019-06-12 16:27:05]open_id is not the same
+[ERROR 2019-06-12 16:27:37]open_id is not the same
+[ERROR 2019-06-12 16:27:57]open_id is not the same
+[ERROR 2019-06-12 16:28:14]The information of log is incorrect
+[ERROR 2019-06-12 16:51:14]Database write failed
+[ERROR 2019-06-12 16:53:47]The status of loan is incorrect
+[ERROR 2019-06-14 11:47:12]The status of loan is incorrect
+[ERROR 2019-06-14 11:47:33]The status of loan is incorrect
+[ERROR 2019-06-14 11:47:54]The status of loan is incorrect
+[ERROR 2019-06-14 14:51:29]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
+[ERROR 2019-06-14 14:58:33]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
+[ERROR 2019-06-14 14:59:01]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
+[ERROR 2019-06-14 15:01:29]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
+[ERROR 2019-06-14 15:25:03]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
+[ERROR 2019-06-17 10:55:11]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
+[ERROR 2019-06-17 10:55:12]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
+[ERROR 2019-06-17 10:55:12]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
