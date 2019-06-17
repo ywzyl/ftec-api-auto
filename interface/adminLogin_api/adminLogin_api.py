@@ -6,7 +6,7 @@ class AdminLogin_API(object):
     @Base_API("sql_script_request.ini","sql_script_post_adminLogin","adminLogin")
     def adminLogin_api(obj):
         body = obj[1]
-        print(body)
+        #print(body)
         assert Assertions().assert_body(body,'msg','请求成功')
 
     """

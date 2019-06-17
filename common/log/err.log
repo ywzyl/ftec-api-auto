@@ -31,3 +31,4 @@
 [ERROR 2019-06-17 10:55:11]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
 [ERROR 2019-06-17 10:55:12]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
 [ERROR 2019-06-17 10:55:12]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg
+[ERROR 2019-06-17 11:40:46]Response body msg != expected_msg, expected_msg is 请求成功, body_msg is msg

@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 import pymysql
-import os
 from common.utils.read_config import read_config_ini
 
 # ======== MySql base operating ===================
