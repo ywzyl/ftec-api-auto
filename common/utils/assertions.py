@@ -18,6 +18,7 @@ class Assertions:
         try:
             msg = body[body_msg]
             assert msg == expected_msg
+            self.log.info("This is a successful request:{}".format(msg))
             return True
 
         except:

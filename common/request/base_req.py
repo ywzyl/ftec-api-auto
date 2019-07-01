@@ -5,7 +5,6 @@ from common.utils.read_config import read_config_ini
 class BaseReq(object):
     r = read_config_ini()
     base_url = r.get("test_url","api_base_url")
-    #headers = r.get("headers","headers")
     base_param = r.items("base_param")
     custom_param = r.items("custom_param")
 
@@ -25,28 +24,18 @@ class BaseReq(object):
     def post(self,data=None,headers=None):
         if not data:
             data = {}
-        base_param = self.base_param
-        custom_param = self.custom_param
+            print("data is None")
         print(self.api_url())
-        #data.update(base_param)
-        #data.update(custom_param)
-        #self.headers = "{'userCookiesName':'km_ft_test'}"
-        #print(self.headers)
         self.response = requests.post(url=self.api_url(),data=data,headers=eval(headers))
-        #print(self.response.headers)
         self.res = self.response.json()
         return self.response,self.res
 
     # 封装GET请求类型
-    def get(self,data=None):
-        if not data:
-            data = {}
-        base_param = self.build_base_param()
-        custom_param = self.build_custom_param(data)
-        data.update(base_param)
-        data.update(custom_param)
+    def get(self,headers=None):
+        if not headers:
+            headers = {}
         print(self.api_url())
-        self.response = requests.get(url=self.api_url(),params=data)
+        self.response = requests.get(url=self.api_url(),headers=eval(headers))
         self.res = self.response.json()
         return self.res,self.response
 

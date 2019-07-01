@@ -12,5 +12,9 @@ class Get_request_sqlData(object):
         try:
             # 获取路径
             self.path = sql_res["path"]
+            # 获取接口名称
+            self.api_name = sql_res["api_name"]
+            # 获取请求头数据
+            self.headers = sql_res["headers"]
         except Exception as e:
             print(e)

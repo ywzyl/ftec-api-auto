@@ -1,7 +1,6 @@
 # -*- coding:utf-8 -*-
 import paramiko
 from common.settings.host_dict import *
-from datetime import datetime
 import os
 
 class SSHConnection(object):

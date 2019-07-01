@@ -3,170 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>Test Report</title>
-    <style>body {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 12px;
-	min-width: 1200px;
-	color: #999;
-}
-
-h1 {
-	font-size: 24px;
-	color: black;
-}
-
-h2 {
-	font-size: 16px;
-	color: black;
-}
-
-p {
-    color: black;
-}
-
-a {
-	color: #999;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-/******************************
- * SUMMARY INFORMATION
- ******************************/
-
-#environment td {
-	padding: 5px;
-	border: 1px solid #E6E6E6;
-}
-
-#environment tr:nth-child(odd) {
-	background-color: #f6f6f6;
-}
-
-/******************************
- * TEST RESULT COLORS
- ******************************/
-span.passed, .passed .col-result {
-	color: green;
-}
-span.skipped, span.xfailed, span.rerun, .skipped .col-result, .xfailed .col-result, .rerun .col-result {
-	color: orange;
-}
-span.error, span.failed, span.xpassed, .error .col-result, .failed .col-result, .xpassed .col-result  {
-	color: red;
-}
-
-
-/******************************
- * RESULTS TABLE
- *
- * 1. Table Layout
- * 2. Extra
- * 3. Sorting items
- *
- ******************************/
-
-/*------------------
- * 1. Table Layout
- *------------------*/
-
-#results-table {
-	border: 1px solid #e6e6e6;
-	color: #999;
-	font-size: 12px;
-	width: 100%
-}
-
-#results-table th, #results-table td {
-	padding: 5px;
-	border: 1px solid #E6E6E6;
-	text-align: left
-}
-#results-table th {
-	font-weight: bold
-}
-
-/*------------------
- * 2. Extra
- *------------------*/
-
-.log:only-child {
-	height: inherit
-}
-.log {
-	background-color: #e6e6e6;
-	border: 1px solid #e6e6e6;
-	color: black;
-	display: block;
-	font-family: "Courier New", Courier, monospace;
-	height: 230px;
-	overflow-y: scroll;
-	padding: 5px;
-	white-space: pre-wrap
-}
-div.image {
-	border: 1px solid #e6e6e6;
-	float: right;
-	height: 240px;
-	margin-left: 5px;
-	overflow: hidden;
-	width: 320px
-}
-div.image img {
-	width: 320px
-}
-.collapsed {
-	display: none;
-}
-.expander::after {
-	content: " (show details)";
-	color: #BBB;
-	font-style: italic;
-	cursor: pointer;
-}
-.collapser::after {
-	content: " (hide details)";
-	color: #BBB;
-	font-style: italic;
-	cursor: pointer;
-}
-
-/*------------------
- * 3. Sorting items
- *------------------*/
-.sortable {
-	cursor: pointer;
-}
-
-.sort-icon {
-	font-size: 0px;
-	float: left;
-	margin-right: 5px;
-	margin-top: 5px;
-	/*triangle*/
-	width: 0;
-	height: 0;
-	border-left: 8px solid transparent;
-	border-right: 8px solid transparent;
-}
-
-.inactive .sort-icon {
-	/*finish triangle*/
-	border-top: 8px solid #E6E6E6;
-}
-
-.asc.active .sort-icon {
-	/*finish triangle*/
-	border-bottom: 8px solid #999;
-}
-
-.desc.active .sort-icon {
-	/*finish triangle*/
-	border-top: 8px solid #999;
-}
-</style></head>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
   <body onLoad="init()">
     <script>/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
@@ -398,7 +235,7 @@ function filter_table(elem) {
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 14-Jun-2019 at 15:31:29 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.20.0</p>
+    <p>Report generated on 01-Jul-2019 at 11:23:53 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.20.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -417,8 +254,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.2</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 1.44 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>2 tests ran in 3.78 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -432,29 +269,101 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">testcase/mainProcessTest/test_institutionProductProcess.py::test_institutionProductProcess</td>
-          <td class="col-duration">0.60</td>
+          <td class="col-name">testcase/mainProcessTest/test_backstageProcess.py::test_institutionProductProcess</td>
+          <td class="col-duration">1.03</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">----------------------------- Captured stdout call -----------------------------<br/>http://finance.cs.xiangqianpos.com/xdd-finance-web/admin/login/adminLogin
-{&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;data&#x27;: {&#x27;token&#x27;: &#x27;a1cfaa716aa9e284b81deb1b28e36dd9&#x27;, &#x27;jumpUrl&#x27;: None, &#x27;userInfoVo&#x27;: {&#x27;id&#x27;: 3, &#x27;openId&#x27;: &#x27;eccbc87e4b5ce2fe28308fd9f2a7baf3&#x27;, &#x27;weChatOpenId&#x27;: &#x27;odqQOw78x3Xt9Q9fuBDq3SINqqeQ&#x27;, &#x27;regAppTime&#x27;: 1557987984000, &#x27;accountNo&#x27;: &#x27;13068281408&#x27;, &#x27;mobile&#x27;: &#x27;13068281408&#x27;, &#x27;nickName&#x27;: None, &#x27;name&#x27;: &#x27;卢卡斯&#x27;, &#x27;idcard&#x27;: None, &#x27;dealerCode&#x27;: &#x27;888&#x27;, &#x27;homeProvince&#x27;: None, &#x27;homeCity&#x27;: None, &#x27;homeArea&#x27;: None, &#x27;homeAddress&#x27;: None, &#x27;familyContact&#x27;: None, &#x27;familyRelationship&#x27;: None, &#x27;familyMobile&#x27;: None, &#x27;workContact&#x27;: None, &#x27;workRelationship&#x27;: None, &#x27;workMobile&#x27;: None, &#x27;otherContact&#x27;: None, &#x27;otherRelationship&#x27;: None, &#x27;otherMobile&#x27;: None, &#x27;source&#x27;: 1, &#x27;userType&#x27;: 2, &#x27;createTime&#x27;: 1557990944000, &#x27;updateTime&#x27;: 1557990944000, &#x27;isShowModule&#x27;: 0, &#x27;idcardFrontImage&#x27;: None, &#x27;idcardBackImage&#x27;: None, &#x27;showModule&#x27;: False}}}
 http://finance.cs.xiangqianpos.com/xdd-finance-web/admin/createInstitutionProduct
 http://finance.cs.xiangqianpos.com/xdd-finance-web/admin/modifyInstitutionProduct
 http://finance.cs.xiangqianpos.com/xdd-finance-web/admin/institutionProductSort
 http://finance.cs.xiangqianpos.com/xdd-finance-web/admin/queryInstitutionProduct
+http://finance.cs.xiangqianpos.com/xdd-finance-web/admin/institutionProductSort
+http://finance.cs.xiangqianpos.com/xdd-finance-web/admin/institutionProductSort
+http://finance.cs.xiangqianpos.com/xdd-finance-web/admin/institutionProductSort
 ------------------------------ Captured log call -------------------------------<br/>[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
 [35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/admin/login/adminLogin HTTP/1.1&quot; 200 None
-[32mINFO    [0m root:log.py:58 [INFO 2019-06-14 15:31:28]adminLogin接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;data&#x27;: {&#x27;token&#x27;: &#x27;a1cfaa716aa9e284b81deb1b28e36dd9&#x27;, &#x27;jumpUrl&#x27;: None, &#x27;userInfoVo&#x27;: {&#x27;id&#x27;: 3, &#x27;openId&#x27;: &#x27;eccbc87e4b5ce2fe28308fd9f2a7baf3&#x27;, &#x27;weChatOpenId&#x27;: &#x27;odqQOw78x3Xt9Q9fuBDq3SINqqeQ&#x27;, &#x27;regAppTime&#x27;: 1557987984000, &#x27;accountNo&#x27;: &#x27;13068281408&#x27;, &#x27;mobile&#x27;: &#x27;13068281408&#x27;, &#x27;nickName&#x27;: None, &#x27;name&#x27;: &#x27;卢卡斯&#x27;, &#x27;idcard&#x27;: None, &#x27;dealerCode&#x27;: &#x27;888&#x27;, &#x27;homeProvince&#x27;: None, &#x27;homeCity&#x27;: None, &#x27;homeArea&#x27;: None, &#x27;homeAddress&#x27;: None, &#x27;familyContact&#x27;: None, &#x27;familyRelationship&#x27;: None, &#x27;familyMobile&#x27;: None, &#x27;workContact&#x27;: None, &#x27;workRelationship&#x27;: None, &#x27;workMobile&#x27;: None, &#x27;otherContact&#x27;: None, &#x27;otherRelationship&#x27;: None, &#x27;otherMobile&#x27;: None, &#x27;source&#x27;: 1, &#x27;userType&#x27;: 2, &#x27;createTime&#x27;: 1557990944000, &#x27;updateTime&#x27;: 1557990944000, &#x27;isShowModule&#x27;: 0, &#x27;idcardFrontImage&#x27;: None, &#x27;idcardBackImage&#x27;: None, &#x27;showModule&#x27;: False}}})，时间戳标记：1560497488
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:50]adminLogin接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;data&#x27;: {&#x27;token&#x27;: &#x27;f3dfcd66d41c7ad735a06d8836c52226&#x27;, &#x27;jumpUrl&#x27;: None, &#x27;userInfoVo&#x27;: {&#x27;id&#x27;: 3, &#x27;openId&#x27;: &#x27;eccbc87e4b5ce2fe28308fd9f2a7baf3&#x27;, &#x27;weChatOpenId&#x27;: &#x27;odqQOw78x3Xt9Q9fuBDq3SINqqeQ&#x27;, &#x27;regAppTime&#x27;: 1557987984000, &#x27;accountNo&#x27;: &#x27;13068281410&#x27;, &#x27;mobile&#x27;: &#x27;18566789247&#x27;, &#x27;nickName&#x27;: None, &#x27;name&#x27;: &#x27;卢卡斯&#x27;, &#x27;idcard&#x27;: None, &#x27;dealerCode&#x27;: &#x27;888&#x27;, &#x27;homeProvince&#x27;: None, &#x27;homeCity&#x27;: None, &#x27;homeArea&#x27;: None, &#x27;homeAddress&#x27;: None, &#x27;familyContact&#x27;: None, &#x27;familyRelationship&#x27;: None, &#x27;familyMobile&#x27;: None, &#x27;workContact&#x27;: None, &#x27;workRelationship&#x27;: None, &#x27;workMobile&#x27;: None, &#x27;otherContact&#x27;: None, &#x27;otherRelationship&#x27;: None, &#x27;otherMobile&#x27;: None, &#x27;source&#x27;: 1, &#x27;userType&#x27;: 2, &#x27;createTime&#x27;: 1557990944000, &#x27;updateTime&#x27;: 1557990944000, &#x27;isShowModule&#x27;: 0, &#x27;idcardFrontImage&#x27;: None, &#x27;idcardBackImage&#x27;: None, &#x27;showModule&#x27;: False}}})，时间戳标记：1561951429
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:50]This is a successful request:请求成功
 [35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
 [35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/admin/createInstitutionProduct HTTP/1.1&quot; 200 None
-[32mINFO    [0m root:log.py:58 [INFO 2019-06-14 15:31:28]createInstitutionProduct接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1560497488
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:50]createInstitutionProduct接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1561951429
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:50]This is a successful request:请求成功
 [35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
 [35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/admin/modifyInstitutionProduct HTTP/1.1&quot; 200 None
-[32mINFO    [0m root:log.py:58 [INFO 2019-06-14 15:31:29]modifyInstitutionProduct接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1560497488
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]modifyInstitutionProduct接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1561951429
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]This is a successful request:请求成功
 [35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
 [35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/admin/institutionProductSort HTTP/1.1&quot; 200 None
-[32mINFO    [0m root:log.py:58 [INFO 2019-06-14 15:31:29]institutionProductSort接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1560497488
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]institutionProductSort接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1561951429
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]This is a successful request:请求成功
 [35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
 [35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/admin/queryInstitutionProduct HTTP/1.1&quot; 200 None
-[32mINFO    [0m root:log.py:58 [INFO 2019-06-14 15:31:29]queryInstitutionProduct接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;pageNo&#x27;: 1, &#x27;pageSize&#x27;: 15, &#x27;totalCount&#x27;: 3, &#x27;hasNext&#x27;: False, &#x27;data&#x27;: [{&#x27;id&#x27;: 17, &#x27;name&#x27;: &#x27;极速借&#x27;, &#x27;institutionId&#x27;: 1, &#x27;institutionName&#x27;: &#x27;极速云&#x27;, &#x27;loanAmount&#x27;: &#x27;500000&#x27;, &#x27;interestRate&#x27;: &#x27;0.03&#x27;, &#x27;loanSpeed&#x27;: &#x27;3小时&#x27;, &#x27;labelId&#x27;: 2, &#x27;label&#x27;: &#x27;新品&#x27;, &#x27;sort&#x27;: 16, &#x27;status&#x27;: 1}, {&#x27;id&#x27;: 19, &#x27;name&#x27;: &#x27;钱妈妈&#x27;, &#x27;institutionId&#x27;: 3, &#x27;institutionName&#x27;: &#x27;钱妈妈&#x27;, &#x27;loanAmount&#x27;: &#x27;6000000&#x27;, &#x27;interestRate&#x27;: &#x27;0.04&#x27;, &#x27;loanSpeed&#x27;: &#x27;4小时&#x27;, &#x27;labelId&#x27;: 1, &#x27;label&#x27;: &#x27;循环额度&#x27;, &#x27;sort&#x27;: 16, &#x27;status&#x27;: 1}, {&#x27;id&#x27;: 18, &#x27;name&#x27;: &#x27;网商贷&#x27;, &#x27;institutionId&#x27;: 2, &#x27;institutionName&#x27;: &#x27;新大陆&#x27;, &#x27;loanAmount&#x27;: &#x27;2000000&#x27;, &#x27;interestRate&#x27;: &#x27;0.03&#x27;, &#x27;loanSpeed&#x27;: &#x27;5小时&#x27;, &#x27;labelId&#x27;: 2, &#x27;label&#x27;: &#x27;新品&#x27;, &#x27;sort&#x27;: 18, &#x27;status&#x27;: 1}], &#x27;startRow&#x27;: 0})，时间戳标记：1560497488</div></td></tr></tbody></table></body></html>
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]queryInstitutionProduct接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;pageNo&#x27;: 1, &#x27;pageSize&#x27;: 15, &#x27;totalCount&#x27;: 3, &#x27;hasNext&#x27;: False, &#x27;data&#x27;: [{&#x27;id&#x27;: 1, &#x27;name&#x27;: &#x27;极速借&#x27;, &#x27;institutionId&#x27;: 1, &#x27;institutionName&#x27;: &#x27;极速云&#x27;, &#x27;loanAmount&#x27;: &#x27;500000&#x27;, &#x27;interestRate&#x27;: &#x27;0.03&#x27;, &#x27;loanSpeed&#x27;: &#x27;1天&#x27;, &#x27;labelId&#x27;: 3, &#x27;label&#x27;: &#x27;热销&#x27;, &#x27;sort&#x27;: 1, &#x27;status&#x27;: 1}, {&#x27;id&#x27;: 2, &#x27;name&#x27;: &#x27;测试贷&#x27;, &#x27;institutionId&#x27;: 2, &#x27;institutionName&#x27;: &#x27;新大陆&#x27;, &#x27;loanAmount&#x27;: &#x27;300000&#x27;, &#x27;interestRate&#x27;: &#x27;2&#x27;, &#x27;loanSpeed&#x27;: &#x27;3小时&#x27;, &#x27;labelId&#x27;: 2, &#x27;label&#x27;: &#x27;新品&#x27;, &#x27;sort&#x27;: 2, &#x27;status&#x27;: 1}, {&#x27;id&#x27;: 3, &#x27;name&#x27;: &#x27;网商小贷&#x27;, &#x27;institutionId&#x27;: 3, &#x27;institutionName&#x27;: &#x27;钱妈妈&#x27;, &#x27;loanAmount&#x27;: &#x27;200000&#x27;, &#x27;interestRate&#x27;: &#x27;0.03&#x27;, &#x27;loanSpeed&#x27;: &#x27;1天&#x27;, &#x27;labelId&#x27;: 1, &#x27;label&#x27;: &#x27;循环额度&#x27;, &#x27;sort&#x27;: 2, &#x27;status&#x27;: 1}], &#x27;startRow&#x27;: 0})，时间戳标记：1561951429
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/admin/institutionProductSort HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]institutionProductSort接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1561951429
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/admin/institutionProductSort HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]institutionProductSort接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1561951429
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/admin/institutionProductSort HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]institutionProductSort接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1561951429
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:51]This is a successful request:请求成功</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcase/mainProcessTest/test_loanAppilicationProcess.py::test_loanApplicationProcess</td>
+          <td class="col-duration">1.19</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">----------------------------- Captured stdout call -----------------------------<br/>http://finance.cs.xiangqianpos.com/xdd-finance-web/cloudBusiness/jumpLogin
+http://finance.cs.xiangqianpos.com/xdd-finance-web/userMerchant/queryUserMerchant
+http://finance.cs.xiangqianpos.com/xdd-finance-web/userMerchant/cacheUserMerchant
+http://finance.cs.xiangqianpos.com/xdd-finance-web/index/queryIndexInfo
+http://finance.cs.xiangqianpos.com/xdd-finance-web/merchant/queryHelperStatus
+http://finance.cs.xiangqianpos.com/xdd-finance-web/institution/getJumpInstitutionInfo
+http://finance.cs.xiangqianpos.com/xdd-finance-web/user/dealerCodeCertification
+http://finance.cs.xiangqianpos.com/xdd-finance-web/loan/queryRecommendCode
+http://finance.cs.xiangqianpos.com/xdd-finance-web/loan/verifyRecommendCode
+------------------------------ Captured log call -------------------------------<br/>[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/cloudBusiness/jumpLogin HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]jumpLogin接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;data&#x27;: {&#x27;token&#x27;: &#x27;24f9add254a948952b25cfe0ab1b5513&#x27;, &#x27;jumpUrl&#x27;: &#x27;https://finance.cs.xiangqianpos.com/xdd-finance-tec/#/business&#x27;, &#x27;weChatOpenId&#x27;: None}})，时间戳标记：1561951430
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/userMerchant/queryUserMerchant HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]queryUserMerchant接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;data&#x27;: [{&#x27;merchantId&#x27;: 271, &#x27;kmMerchantId&#x27;: 997450, &#x27;merchantName&#x27;: &#x27;wxhb&#x27;, &#x27;isOpen&#x27;: False, &#x27;isVersion&#x27;: False, &#x27;middlewareV&#x27;: &#x27;1.0.0&#x27;, &#x27;minMiddlewareV&#x27;: &#x27;2.1.1&#x27;, &#x27;dealerCode&#x27;: &#x27;00&#x27;}, {&#x27;merchantId&#x27;: 270, &#x27;kmMerchantId&#x27;: 997674, &#x27;merchantName&#x27;: &#x27;烘焙V9&#x27;, &#x27;isOpen&#x27;: True, &#x27;isVersion&#x27;: False, &#x27;middlewareV&#x27;: &#x27;1.0.0&#x27;, &#x27;minMiddlewareV&#x27;: &#x27;2.1.1&#x27;, &#x27;dealerCode&#x27;: &#x27;00&#x27;}, {&#x27;merchantId&#x27;: 272, &#x27;kmMerchantId&#x27;: 997665, &#x27;merchantName&#x27;: &#x27;启谋&#x27;, &#x27;isOpen&#x27;: True, &#x27;isVersion&#x27;: False, &#x27;middlewareV&#x27;: &#x27;1.0.0&#x27;, &#x27;minMiddlewareV&#x27;: &#x27;2.1.1&#x27;, &#x27;dealerCode&#x27;: &#x27;00&#x27;}]})，时间戳标记：1561951430
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/userMerchant/cacheUserMerchant HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]cacheUserMerchant接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1561951430
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/index/queryIndexInfo HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]queryIndexInfo接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;data&#x27;: {&#x27;isShowDealerCodeModule&#x27;: False, &#x27;merchantId&#x27;: 0, &#x27;merchantName&#x27;: &#x27;&#x27;, &#x27;productVOList&#x27;: [{&#x27;id&#x27;: 1, &#x27;name&#x27;: &#x27;极速借&#x27;, &#x27;institutionId&#x27;: 1, &#x27;institutionName&#x27;: &#x27;极速云&#x27;, &#x27;loanAmount&#x27;: &#x27;500000&#x27;, &#x27;interestRate&#x27;: &#x27;0.03&#x27;, &#x27;loanSpeed&#x27;: &#x27;1天&#x27;, &#x27;labelId&#x27;: 3, &#x27;label&#x27;: &#x27;热销&#x27;, &#x27;sort&#x27;: 1, &#x27;status&#x27;: 1}, {&#x27;id&#x27;: 2, &#x27;name&#x27;: &#x27;测试贷&#x27;, &#x27;institutionId&#x27;: 2, &#x27;institutionName&#x27;: &#x27;新大陆&#x27;, &#x27;loanAmount&#x27;: &#x27;300000&#x27;, &#x27;interestRate&#x27;: &#x27;2&#x27;, &#x27;loanSpeed&#x27;: &#x27;3小时&#x27;, &#x27;labelId&#x27;: 2, &#x27;label&#x27;: &#x27;新品&#x27;, &#x27;sort&#x27;: 2, &#x27;status&#x27;: 1}, {&#x27;id&#x27;: 3, &#x27;name&#x27;: &#x27;网商小贷&#x27;, &#x27;institutionId&#x27;: 3, &#x27;institutionName&#x27;: &#x27;钱妈妈&#x27;, &#x27;loanAmount&#x27;: &#x27;200000&#x27;, &#x27;interestRate&#x27;: &#x27;0.03&#x27;, &#x27;loanSpeed&#x27;: &#x27;1天&#x27;, &#x27;labelId&#x27;: 1, &#x27;label&#x27;: &#x27;循环额度&#x27;, &#x27;sort&#x27;: 2, &#x27;status&#x27;: 1}]}})，时间戳标记：1561951430
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/merchant/queryHelperStatus HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]queryHelperStatus接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;data&#x27;: {&#x27;merchantId&#x27;: 272, &#x27;kmMerchantId&#x27;: 997665, &#x27;merchantName&#x27;: &#x27;启谋&#x27;, &#x27;isOpen&#x27;: True, &#x27;isVersion&#x27;: False, &#x27;middlewareV&#x27;: &#x27;1.0.0&#x27;, &#x27;minMiddlewareV&#x27;: &#x27;2.1.1&#x27;, &#x27;dealerCode&#x27;: &#x27;00&#x27;}})，时间戳标记：1561951430
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/institution/getJumpInstitutionInfo HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]getJumpInstitutionInfo接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;data&#x27;: {&#x27;kmMerchantId&#x27;: 0, &#x27;xinDaLuToken&#x27;: None, &#x27;mobile&#x27;: None, &#x27;uid&#x27;: &#x27;70babb49dce5a6c1b84a4fa6b460c612:87228f178f64df07e28280f848455722&#x27;, &#x27;partner&#x27;: &#x27;kemai&#x27;, &#x27;ts&#x27;: 1561951431642, &#x27;sign&#x27;: &#x27;3028861257e928f8bad81b3762f62627&#x27;, &#x27;qmmUrl&#x27;: None}})，时间戳标记：1561951430
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/user/dealerCodeCertification HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]dealerCodeCertification接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1561951430
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:52]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/loan/queryRecommendCode HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:53]queryRecommendCode接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;, &#x27;data&#x27;: &#x27;888&#x27;})，时间戳标记：1561951430
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:53]This is a successful request:请求成功
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:206 Starting new HTTP connection (1): finance.cs.xiangqianpos.com:80
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:396 http://finance.cs.xiangqianpos.com:80 &quot;POST /xdd-finance-web/loan/verifyRecommendCode HTTP/1.1&quot; 200 None
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:53]verifyRecommendCode接口的响应信息：(&lt;Response [200]&gt;, {&#x27;success&#x27;: True, &#x27;code&#x27;: 0, &#x27;msg&#x27;: &#x27;请求成功&#x27;, &#x27;resultCode&#x27;: &#x27;SUCCESS&#x27;})，时间戳标记：1561951430
+[32mINFO    [0m root:log.py:58 [INFO 2019-07-01 11:23:53]This is a successful request:请求成功</div></td></tr></tbody></table></body></html>

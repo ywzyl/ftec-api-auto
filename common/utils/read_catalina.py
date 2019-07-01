@@ -1,9 +1,9 @@
 import os
 
 class Read_Catalina(object):
-    def read_catalina(self):
+    def read_catalina(self,logName):
         base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        file_path = base_dir + '\\log\\catalina.out'
+        file_path = base_dir + '\\log\\{}'.format(logName)
         log_info = open(file_path,'r',encoding='utf-8')
         return log_info
 

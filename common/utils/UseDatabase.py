@@ -2,6 +2,7 @@ import pymysql,pymssql
 from common.utils.read_config import read_config_ini
 
 class UseDatabase:
+    """上下文关联"""
     def __init__(self,db_config: str,dbtype: str) -> None:
         r = read_config_ini()
         self.host=r.get(db_config,"db_host")
